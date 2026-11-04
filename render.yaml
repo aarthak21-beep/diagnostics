@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: moti-diagnostics-preview
+    runtime: static
+    branch: design-refresh-preview
+    buildCommand: npm install --legacy-peer-deps --no-audit --no-fund && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
