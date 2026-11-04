@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: process.env.GITHUB_PAGES === 'true' ? '/diagnostics/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
