@@ -11,12 +11,12 @@ const services = [
   { icon: Dna, title: "Specialized Tests", desc: "Information and guidance about specialized tests." },
   { icon: HeartPulse, title: "Health Check-up", desc: "Options for routine preventive health screening." },
   { icon: Microscope, title: "Microscopy", desc: "Microscopic examination of clinical samples." },
-  { icon: TestTube2, title: "Sample Collection", desc: "नमुना संकलनाच्या उपलब्ध पर्यायांसाठी {t("चौकशी करा","Enquire Now")}." },
+  { icon: TestTube2, title: "Sample Collection", desc: "Sample collection options and guidance." },
 ];
 
 const benefits = [
   { icon: ShieldCheck, title: "Reliable Processes", desc: "Careful sample handling and reporting procedures." },
-  { icon: Clock3, title: "वेळेची {t("स्पष्ट माहिती","Clear Guidance")}", desc: "तपासणी आणि रिपोर्टच्या अपेक्षित वेळेबद्दल आधीच माहिती." },
+  { icon: Clock3, title: "Clear Guidance on Timelines", desc: "तपासणी आणि रिपोर्टच्या अपेक्षित वेळेबद्दल आधीच माहिती." },
   { icon: Stethoscope, title: "Patient-focused Care", desc: "Helpful guidance and instructions before testing." },
 ];
 
@@ -84,7 +84,7 @@ export default function App() {
         <section id="about" className="bg-[#f3f8fb] py-20 sm:py-24">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
             <div className="rounded-[2rem] bg-gradient-to-br from-[#0c527f] to-[#092b50] p-8 text-white sm:p-12"><div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-cyan-300"><Microscope size={34} /></div><p className="mt-8 text-xs font-bold uppercase tracking-[.22em] text-cyan-200">ABOUT MOTi</p><h2 className="mt-3 font-display text-3xl font-extrabold leading-tight sm:text-4xl">{t("आरोग्य समजून घेण्याची सुरुवात योग्य तपासणीतून.","Understanding your health starts with the right tests.")}</h2><p className="mt-5 text-sm leading-7 text-blue-100">MOTi Diagnostics Centre मध्ये तपासणी प्रक्रियेबद्दल {t("स्पष्ट माहिती","Clear Guidance")}, नमुन्यांची काळजीपूर्वक हाताळणी आणि रुग्णांना आवश्यक मार्गदर्शन यांना महत्त्व दिले जाते.</p></div>
-            <div><p className="text-xs font-extrabold uppercase tracking-[.22em] text-[#079bb7]">A BETTER TESTING EXPERIENCE</p><h2 className="mt-3 font-display text-3xl font-extrabold text-[#092b50] sm:text-4xl">{t("तुमच्या सोयीचा विचार करून","Designed Around Your Convenience")}</h2><p className="mt-5 leading-8 text-slate-600">{t("तपासणीपूर्वी काय तयारी आवश्यक आहे, नमुना कसा द्यायचा आणि रिपोर्ट कधी मिळेल—या महत्त्वाच्या प्रश्नांची उत्तरे तुम्हाला समजेल अशा पद्धतीने देण्याचा आमचा प्रयत्न आहे.","We aim to clearly explain test preparation, sample collection and expected report timelines.")}</p><div className="mt-8 space-y-5">{["{t("तपासणीपूर्व सूचना समजावून सांगणे","Clear pre-test instructions")}","{t("नमुना संकलन व प्रक्रियेबद्दल माहिती","Information about sample collection and procedures")}","{t("रिपोर्ट आणि पुढील मार्गदर्शनाबाबत स्पष्ट संवाद","Clear communication about reports and next steps")}"].map(item=><div key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-1 shrink-0 text-teal-600" size={20}/><span className="font-semibold text-slate-700">{item}</span></div>)}</div></div>
+            <div><p className="text-xs font-extrabold uppercase tracking-[.22em] text-[#079bb7]">A BETTER TESTING EXPERIENCE</p><h2 className="mt-3 font-display text-3xl font-extrabold text-[#092b50] sm:text-4xl">{t("तुमच्या सोयीचा विचार करून","Designed Around Your Convenience")}</h2><p className="mt-5 leading-8 text-slate-600">{t("तपासणीपूर्वी काय तयारी आवश्यक आहे, नमुना कसा द्यायचा आणि रिपोर्ट कधी मिळेल—या महत्त्वाच्या प्रश्नांची उत्तरे तुम्हाला समजेल अशा पद्धतीने देण्याचा आमचा प्रयत्न आहे.","We aim to clearly explain test preparation, sample collection and expected report timelines.")}</p><div className="mt-8 space-y-5">{[t("तपासणीपूर्व सूचना समजावून सांगणे","Clear pre-test instructions"),t("नमुना संकलन व प्रक्रियेबद्दल माहिती","Information about sample collection and procedures"),t("रिपोर्ट आणि पुढील मार्गदर्शनाबाबत स्पष्ट संवाद","Clear communication about reports and next steps")].map(item=><div key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-1 shrink-0 text-teal-600" size={20}/><span className="font-semibold text-slate-700">{item}</span></div>)}</div></div>
           </div>
         </section>
 
